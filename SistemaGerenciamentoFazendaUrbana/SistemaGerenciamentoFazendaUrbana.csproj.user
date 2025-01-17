@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="TelaCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaEquipes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaNovaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaNovaEquipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaNovaProducao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaNovaVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaNovoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaNovoFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaNovoFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaNovoInsumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaProducao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TelaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
