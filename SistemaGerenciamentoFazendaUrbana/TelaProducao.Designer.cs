@@ -45,6 +45,7 @@
             btn_editar_producao = new Button();
             btn_consultar_producao = new Button();
             btn_producao_voltar = new Button();
+            btn_pesquisar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -118,7 +119,7 @@
             lbl_classe_producao.BackColor = Color.White;
             lbl_classe_producao.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_classe_producao.ForeColor = SystemColors.ControlDarkDark;
-            lbl_classe_producao.Location = new Point(282, 79);
+            lbl_classe_producao.Location = new Point(249, 79);
             lbl_classe_producao.Name = "lbl_classe_producao";
             lbl_classe_producao.Size = new Size(127, 17);
             lbl_classe_producao.TabIndex = 16;
@@ -127,14 +128,15 @@
             // combobox_classe_prod
             // 
             combobox_classe_prod.FormattingEnabled = true;
-            combobox_classe_prod.Location = new Point(282, 99);
+            combobox_classe_prod.Items.AddRange(new object[] { "Fruta", "Verdura", "Legume" });
+            combobox_classe_prod.Location = new Point(249, 99);
             combobox_classe_prod.Name = "combobox_classe_prod";
             combobox_classe_prod.Size = new Size(187, 23);
             combobox_classe_prod.TabIndex = 17;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(534, 99);
+            dateTimePicker1.Location = new Point(466, 96);
             dateTimePicker1.MaxDate = new DateTime(2100, 12, 31, 0, 0, 0, 0);
             dateTimePicker1.MinDate = new DateTime(2024, 1, 1, 0, 0, 0, 0);
             dateTimePicker1.Name = "dateTimePicker1";
@@ -147,7 +149,7 @@
             lbl_ultima_colheita.BackColor = Color.White;
             lbl_ultima_colheita.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_ultima_colheita.ForeColor = SystemColors.ControlDarkDark;
-            lbl_ultima_colheita.Location = new Point(534, 79);
+            lbl_ultima_colheita.Location = new Point(466, 79);
             lbl_ultima_colheita.Name = "lbl_ultima_colheita";
             lbl_ultima_colheita.Size = new Size(104, 17);
             lbl_ultima_colheita.TabIndex = 19;
@@ -159,7 +161,7 @@
             lbl_status_producao.BackColor = Color.White;
             lbl_status_producao.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_status_producao.ForeColor = SystemColors.ControlDarkDark;
-            lbl_status_producao.Location = new Point(795, 79);
+            lbl_status_producao.Location = new Point(706, 79);
             lbl_status_producao.Name = "lbl_status_producao";
             lbl_status_producao.Size = new Size(46, 17);
             lbl_status_producao.TabIndex = 20;
@@ -168,7 +170,8 @@
             // combobox_status_prod
             // 
             combobox_status_prod.FormattingEnabled = true;
-            combobox_status_prod.Location = new Point(795, 99);
+            combobox_status_prod.Items.AddRange(new object[] { "Ativo", "Inativo" });
+            combobox_status_prod.Location = new Point(706, 96);
             combobox_status_prod.Name = "combobox_status_prod";
             combobox_status_prod.Size = new Size(125, 23);
             combobox_status_prod.TabIndex = 21;
@@ -203,19 +206,20 @@
             btn_editar_producao.BackColor = Color.Green;
             btn_editar_producao.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_editar_producao.ForeColor = Color.White;
-            btn_editar_producao.Location = new Point(426, 146);
+            btn_editar_producao.Location = new Point(282, 146);
             btn_editar_producao.Name = "btn_editar_producao";
             btn_editar_producao.Size = new Size(144, 23);
             btn_editar_producao.TabIndex = 24;
             btn_editar_producao.Text = "Editar Produção";
             btn_editar_producao.UseVisualStyleBackColor = false;
+            btn_editar_producao.Click += btn_editar_producao_Click;
             // 
             // btn_consultar_producao
             // 
             btn_consultar_producao.BackColor = Color.Green;
             btn_consultar_producao.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_consultar_producao.ForeColor = Color.White;
-            btn_consultar_producao.Location = new Point(776, 146);
+            btn_consultar_producao.Location = new Point(494, 146);
             btn_consultar_producao.Name = "btn_consultar_producao";
             btn_consultar_producao.Size = new Size(144, 23);
             btn_consultar_producao.TabIndex = 25;
@@ -236,12 +240,23 @@
             btn_producao_voltar.UseVisualStyleBackColor = false;
             btn_producao_voltar.Click += btn_producao_voltar_Click;
             // 
+            // btn_pesquisar
+            // 
+            btn_pesquisar.Location = new Point(873, 95);
+            btn_pesquisar.Name = "btn_pesquisar";
+            btn_pesquisar.Size = new Size(88, 24);
+            btn_pesquisar.TabIndex = 80;
+            btn_pesquisar.Text = "Pesquisar";
+            btn_pesquisar.UseVisualStyleBackColor = true;
+            btn_pesquisar.Click += btn_pesquisar_Click;
+            // 
             // TelaProducao
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_pesquisar);
             Controls.Add(btn_producao_voltar);
             Controls.Add(btn_consultar_producao);
             Controls.Add(btn_editar_producao);
@@ -263,7 +278,6 @@
             Name = "TelaProducao";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nexus Urban Farm";
-            FormClosing += TelaProducao_FormClosing;
             Load += TelaProducao_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -280,7 +294,6 @@
         private Label lbl_producao;
         private PictureBox pictureBox1;
         private Label lbl_cod_producao;
-        private TextBox txtbox_cod_producao;
         private Label lbl_classe_producao;
         private ComboBox combobox_classe_prod;
         private DateTimePicker dateTimePicker1;
@@ -292,5 +305,7 @@
         private Button btn_consultar_producao;
         private Button btn_producao_voltar;
         public DataGridView dataGridView1;
+        private Button btn_pesquisar;
+        public TextBox txtbox_cod_producao;
     }
 }

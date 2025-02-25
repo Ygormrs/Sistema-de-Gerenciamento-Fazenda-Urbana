@@ -41,3 +41,4 @@ E:\faculdade\PIM4\Sistema de Gerenciamento\SistemaGerenciamentoFazendaUrbana\Sis
 E:\faculdade\PIM4\Sistema de Gerenciamento\SistemaGerenciamentoFazendaUrbana\SistemaGerenciamentoFazendaUrbana\obj\Debug\net8.0-windows\SistemaGerenciamentoFazendaUrbana.TelaNovaCompra.resources
 E:\faculdade\PIM4\Sistema de Gerenciamento\SistemaGerenciamentoFazendaUrbana\SistemaGerenciamentoFazendaUrbana\obj\Debug\net8.0-windows\SistemaGerenciamentoFazendaUrbana.TelaNovoCliente.resources
 E:\faculdade\PIM4\Sistema de Gerenciamento\SistemaGerenciamentoFazendaUrbana\SistemaGerenciamentoFazendaUrbana\obj\Debug\net8.0-windows\SistemaGerenciamentoFazendaUrbana.TelaNovaVenda.resources
+E:\faculdade\PIM4\Sistema de Gerenciamento\SistemaGerenciamentoFazendaUrbana\SistemaGerenciamentoFazendaUrbana\obj\Debug\net8.0-windows\SistemaGerenciamentoFazendaUrbana.sourcelink.json

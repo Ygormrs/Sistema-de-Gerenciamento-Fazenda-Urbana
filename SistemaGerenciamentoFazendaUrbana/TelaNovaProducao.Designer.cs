@@ -56,6 +56,7 @@
             rb_np_status_inativo = new RadioButton();
             lbl_cod_np = new Label();
             txtbox_np_codigoprod = new TextBox();
+            btn_att_np = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -165,6 +166,7 @@
             // combobox_np_classe
             // 
             combobox_np_classe.FormattingEnabled = true;
+            combobox_np_classe.Items.AddRange(new object[] { "Fruta", "Verdura", "Legume" });
             combobox_np_classe.Location = new Point(318, 162);
             combobox_np_classe.Name = "combobox_np_classe";
             combobox_np_classe.Size = new Size(127, 23);
@@ -352,11 +354,24 @@
             txtbox_np_codigoprod.Size = new Size(78, 23);
             txtbox_np_codigoprod.TabIndex = 154;
             // 
+            // btn_att_np
+            // 
+            btn_att_np.BackColor = Color.YellowGreen;
+            btn_att_np.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_att_np.Location = new Point(454, 626);
+            btn_att_np.Name = "btn_att_np";
+            btn_att_np.Size = new Size(75, 23);
+            btn_att_np.TabIndex = 155;
+            btn_att_np.Text = "Atualizar";
+            btn_att_np.UseVisualStyleBackColor = false;
+            btn_att_np.Click += btn_att_np_Click;
+            // 
             // TelaNovaProducao
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_att_np);
             Controls.Add(txtbox_np_codigoprod);
             Controls.Add(lbl_cod_np);
             Controls.Add(rb_np_status_inativo);
@@ -388,7 +403,6 @@
             Name = "TelaNovaProducao";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nexus Urban Farm";
-            FormClosing += TelaNovaProducao_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -426,5 +440,6 @@
         public RadioButton rb_np_status_inativo;
         public Button btn_np_salvar;
         public Label lbl_novaproducao;
+        public Button btn_att_np;
     }
 }

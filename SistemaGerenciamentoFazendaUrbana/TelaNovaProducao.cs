@@ -20,7 +20,7 @@ namespace SistemaGerenciamentoFazendaUrbana
         }
 
 
-        private void btn_np_salvar_Click(object sender, EventArgs e)
+        public void btn_np_salvar_Click(object sender, EventArgs e)
         {
             SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-5VTI9UI\SQLSERVER2022; integrated security=SSPI; initial catalog=DigitalNexus");
             SqlCommand cmd = new SqlCommand();
@@ -69,7 +69,7 @@ namespace SistemaGerenciamentoFazendaUrbana
 
         private void btn_np_voltar_Click(object sender, EventArgs e)
         {
-            // Chama o método de confirmação
+            //Chama o método de confirmação
             if (ConfirmarVoltar())
             {
                 this.Hide(); // Oculta a tela atual
@@ -82,14 +82,74 @@ namespace SistemaGerenciamentoFazendaUrbana
             return resultado == DialogResult.Yes; // Retorna true se o usuário clicar em "Sim"
         }
 
-        private void TelaNovaProducao_FormClosing(object sender, FormClosingEventArgs e)
+        private void btn_att_np_Click(object sender, EventArgs e)
         {
-            DialogResult dlg = MessageBox.Show("Você realmente deseja voltar?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-5VTI9UI\SQLSERVER2022; integrated security=SSPI; initial catalog=DigitalNexus");
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = cn; // Associar conexão ao comando
 
-            if (dlg == DialogResult.No)
+            // Alteração do comando SQL para UPDATE
+            cmd.CommandText = "UPDATE Producoes SET " +
+                              "Nome = @nome, " +
+                              "Classe = @classe, " +
+                              "TempoMedioMaturacao = @tempodematuracao, " +
+                              "MedidaTempo = @medidatempo, " +
+                              "Umidade = @umidade, " +
+                              "Temperatura = @temperatura, " +
+                              "NivelLuz = @nivelluz, " +
+                              "StatusProducao = @status, " +
+                              "DataProducao = @dataproducao " +
+                              "WHERE IDProducao = @codigo"; // Supondo que você use o "Codigo" como chave primária
+
+            // Adicionar parâmetros ao comando
+            cmd.Parameters.Add("@nome", SqlDbType.VarChar).Value = txtbox_np_nomedoproduto.Text;
+            cmd.Parameters.Add("@classe", SqlDbType.VarChar).Value = combobox_np_classe.Text;
+            cmd.Parameters.Add("@tempodematuracao", SqlDbType.Int).Value = int.TryParse(txtbox_np_tempomedio.Text, out int tempoDeMaturacao) ? tempoDeMaturacao : 0;
+            cmd.Parameters.Add("@medidatempo", SqlDbType.VarChar).Value = combobox_np_medidadetempo.Text;
+            cmd.Parameters.Add("@umidade", SqlDbType.Decimal).Value = decimal.TryParse(txtbox_np_umidade.Text, out decimal umidade) ? umidade : 0;
+            cmd.Parameters.Add("@temperatura", SqlDbType.Decimal).Value = decimal.TryParse(txtbox_np_temperatura.Text, out decimal temperatura) ? temperatura : 0;
+            cmd.Parameters.Add("@nivelluz", SqlDbType.Decimal).Value = decimal.TryParse(txtbox_np_niveldeluz.Text, out decimal nivelLuz) ? nivelLuz : 0;
+            cmd.Parameters.Add("@dataproducao", SqlDbType.Date).Value = dateTimePicker1.Text;
+
+            if (rb_np_status_ativo.Checked == true)
             {
-                e.Cancel = true;
+                cmd.Parameters.Add("@status", SqlDbType.VarChar).Value = rb_np_status_ativo.Text;
+            }
+            else
+            {
+                cmd.Parameters.Add("@status", SqlDbType.VarChar).Value = rb_np_status_inativo.Text;
+            }
+
+            // Supondo que o código do produto esteja no TextBox `txtbox_np_codigoprod`
+            cmd.Parameters.Add("@codigo", SqlDbType.Int).Value = int.TryParse(txtbox_np_codigoprod.Text, out int codigo) ? codigo : 0;
+
+            try
+            {
+                cn.Open(); // Abre a conexão
+                cmd.ExecuteNonQuery(); // Executa o comando de atualização
+
+                MessageBox.Show("Dados atualizados com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao atualizar os dados: {ex.Message}");
+            }
+            finally
+            {
+                cn.Close(); // Fecha a conexão
+                this.Hide();
             }
         }
+
+
+        //private void TelaNovaProducao_FormClosing(object sender, FormClosingEventArgs e)
+        //{
+        //    DialogResult dlg = MessageBox.Show("Você realmente deseja voltar?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+        //    if (dlg == DialogResult.No)
+        //    {
+        //        e.Cancel = true;
+        //    }
+        //}
     }
 }
