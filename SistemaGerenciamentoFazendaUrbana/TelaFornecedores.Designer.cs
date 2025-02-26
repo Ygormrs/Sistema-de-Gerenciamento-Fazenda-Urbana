@@ -39,10 +39,11 @@
             txtbox_nome_fornecedor = new TextBox();
             combobox_status_fornecedor = new ComboBox();
             btn_add_fornecedor = new Button();
-            button1 = new Button();
+            btn_att_fornecedor = new Button();
             btn_fornecedor_consulta = new Button();
             dataGridView1 = new DataGridView();
             btn_fornecedores_voltar = new Button();
+            btn_pesquisar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -120,7 +121,7 @@
             lbl_status_fornecedor.BackColor = Color.White;
             lbl_status_fornecedor.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_status_fornecedor.ForeColor = SystemColors.ControlDarkDark;
-            lbl_status_fornecedor.Location = new Point(428, 83);
+            lbl_status_fornecedor.Location = new Point(428, 85);
             lbl_status_fornecedor.Name = "lbl_status_fornecedor";
             lbl_status_fornecedor.Size = new Size(46, 17);
             lbl_status_fornecedor.TabIndex = 18;
@@ -143,7 +144,7 @@
             // combobox_status_fornecedor
             // 
             combobox_status_fornecedor.FormattingEnabled = true;
-            combobox_status_fornecedor.Location = new Point(428, 103);
+            combobox_status_fornecedor.Location = new Point(428, 105);
             combobox_status_fornecedor.Name = "combobox_status_fornecedor";
             combobox_status_fornecedor.Size = new Size(187, 23);
             combobox_status_fornecedor.TabIndex = 25;
@@ -161,24 +162,25 @@
             btn_add_fornecedor.UseVisualStyleBackColor = false;
             btn_add_fornecedor.Click += btn_add_fornecedor_Click;
             // 
-            // button1
+            // btn_att_fornecedor
             // 
-            button1.BackColor = Color.Green;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(428, 148);
-            button1.Name = "button1";
-            button1.Size = new Size(144, 23);
-            button1.TabIndex = 27;
-            button1.Text = "Editar Fornecedor";
-            button1.UseVisualStyleBackColor = false;
+            btn_att_fornecedor.BackColor = Color.Green;
+            btn_att_fornecedor.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_att_fornecedor.ForeColor = Color.White;
+            btn_att_fornecedor.Location = new Point(428, 148);
+            btn_att_fornecedor.Name = "btn_att_fornecedor";
+            btn_att_fornecedor.Size = new Size(144, 23);
+            btn_att_fornecedor.TabIndex = 27;
+            btn_att_fornecedor.Text = "Editar Fornecedor";
+            btn_att_fornecedor.UseVisualStyleBackColor = false;
+            btn_att_fornecedor.Click += btn_att_fornecedor_Click;
             // 
             // btn_fornecedor_consulta
             // 
             btn_fornecedor_consulta.BackColor = Color.Green;
             btn_fornecedor_consulta.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_fornecedor_consulta.ForeColor = Color.White;
-            btn_fornecedor_consulta.Location = new Point(828, 148);
+            btn_fornecedor_consulta.Location = new Point(232, 148);
             btn_fornecedor_consulta.Name = "btn_fornecedor_consulta";
             btn_fornecedor_consulta.Size = new Size(144, 23);
             btn_fornecedor_consulta.TabIndex = 28;
@@ -208,16 +210,26 @@
             btn_fornecedores_voltar.UseVisualStyleBackColor = false;
             btn_fornecedores_voltar.Click += btn_fornecedores_voltar_Click;
             // 
+            // btn_pesquisar
+            // 
+            btn_pesquisar.Location = new Point(875, 103);
+            btn_pesquisar.Name = "btn_pesquisar";
+            btn_pesquisar.Size = new Size(88, 24);
+            btn_pesquisar.TabIndex = 82;
+            btn_pesquisar.Text = "Pesquisar";
+            btn_pesquisar.UseVisualStyleBackColor = true;
+            // 
             // TelaFornecedores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_pesquisar);
             Controls.Add(btn_fornecedores_voltar);
             Controls.Add(dataGridView1);
             Controls.Add(btn_fornecedor_consulta);
-            Controls.Add(button1);
+            Controls.Add(btn_att_fornecedor);
             Controls.Add(btn_add_fornecedor);
             Controls.Add(combobox_status_fornecedor);
             Controls.Add(txtbox_nome_fornecedor);
@@ -255,9 +267,10 @@
         private TextBox txtbox_nome_fornecedor;
         private ComboBox combobox_status_fornecedor;
         private Button btn_add_fornecedor;
-        private Button button1;
+        private Button btn_att_fornecedor;
         private Button btn_fornecedor_consulta;
         private DataGridView dataGridView1;
         private Button btn_fornecedores_voltar;
+        private Button btn_pesquisar;
     }
 }

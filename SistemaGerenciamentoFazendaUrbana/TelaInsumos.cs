@@ -21,6 +21,7 @@ namespace SistemaGerenciamentoFazendaUrbana
         private void btn_add_insumo_Click(object sender, EventArgs e)
         {
             TelaNovoInsumo FormMain = new TelaNovoInsumo();
+            FormMain.btn_att_ni.Visible = false;
             FormMain.ShowDialog();
         }
 
@@ -45,17 +46,18 @@ namespace SistemaGerenciamentoFazendaUrbana
 
         private void btn_consultar_insumo_Click(object sender, EventArgs e)
         {
-
             TelaNovoInsumo FormMain = new TelaNovoInsumo();
-            FormMain.lbl_novoinsumo.Text = "Consulta Insumo";
+            FormMain.btn_att_ni.Enabled = false;
+            FormMain.lbl_novoinsumo.Text = "Consultar Insumo";
             FormMain.btn_ni_salvar.Visible = false;
+            FormMain.btn_att_ni.Visible = false;
             FormMain.txtbox_ni_codigo.Text = dataGridView1.CurrentRow.Cells["IDInsumo"].Value.ToString();
             FormMain.txtbox_ni_nomeinsumo.Enabled = false;
             FormMain.txtbox_ni_nomeinsumo.Text = dataGridView1.CurrentRow.Cells["Nome"].Value.ToString();
             FormMain.combobox_ni_tipoinsumo.Enabled = false;
             FormMain.combobox_ni_tipoinsumo.Text = dataGridView1.CurrentRow.Cells["TipoInsumo"].Value.ToString();
-            FormMain.txtbox_ni_quantidadedisponivel.Enabled = false;
-            FormMain.txtbox_ni_quantidadedisponivel.Text = dataGridView1.CurrentRow.Cells["Quantidade"].Value.ToString();
+            FormMain.txtbox_ni_quantidade.Enabled = false;
+            FormMain.txtbox_ni_quantidade.Text = dataGridView1.CurrentRow.Cells["Quantidade"].Value.ToString();
             FormMain.msktxtbox_ni_cnpj_fornecedor.Enabled = false;
             FormMain.msktxtbox_ni_cnpj_fornecedor.Text = dataGridView1.CurrentRow.Cells["CNPJ"].Value.ToString();
             FormMain.ShowDialog();
@@ -69,6 +71,20 @@ namespace SistemaGerenciamentoFazendaUrbana
             {
                 e.Cancel = true;
             }
+        }
+
+        private void btn_att_insumo_Click(object sender, EventArgs e)
+        {
+            TelaNovoInsumo FormMain = new TelaNovoInsumo();
+            FormMain.lbl_novoinsumo.Text = "Editar Insumo";
+            FormMain.btn_ni_salvar.Enabled = false;
+
+            FormMain.txtbox_ni_codigo.Text = dataGridView1.CurrentRow.Cells["IDInsumo"].Value.ToString();
+            FormMain.txtbox_ni_nomeinsumo.Text = dataGridView1.CurrentRow.Cells["Nome"].Value.ToString();
+            FormMain.combobox_ni_tipoinsumo.Text = dataGridView1.CurrentRow.Cells["TipoInsumo"].Value.ToString();
+            FormMain.txtbox_ni_quantidade.Text = dataGridView1.CurrentRow.Cells["Quantidade"].Value.ToString();
+            FormMain.msktxtbox_ni_cnpj_fornecedor.Text = dataGridView1.CurrentRow.Cells["CNPJ"].Value.ToString();
+            FormMain.ShowDialog();
         }
     }
 }

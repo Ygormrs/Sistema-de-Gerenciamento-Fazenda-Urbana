@@ -42,6 +42,8 @@
             btn_consultar_insumo = new Button();
             dataGridView1 = new DataGridView();
             btn_insumos_voltar = new Button();
+            btn_pesquisar = new Button();
+            btn_att_insumo = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -85,7 +87,7 @@
             pictureBox1.BackColor = Color.White;
             pictureBox1.Location = new Point(12, 62);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(984, 77);
+            pictureBox1.Size = new Size(984, 125);
             pictureBox1.TabIndex = 14;
             pictureBox1.TabStop = false;
             // 
@@ -95,7 +97,7 @@
             lbl_cod_insumo.BackColor = Color.White;
             lbl_cod_insumo.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_cod_insumo.ForeColor = SystemColors.ControlDarkDark;
-            lbl_cod_insumo.Location = new Point(30, 76);
+            lbl_cod_insumo.Location = new Point(40, 74);
             lbl_cod_insumo.Name = "lbl_cod_insumo";
             lbl_cod_insumo.Size = new Size(122, 17);
             lbl_cod_insumo.TabIndex = 15;
@@ -107,7 +109,7 @@
             lbl_nome_insumo.BackColor = Color.White;
             lbl_nome_insumo.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_nome_insumo.ForeColor = SystemColors.ControlDarkDark;
-            lbl_nome_insumo.Location = new Point(224, 76);
+            lbl_nome_insumo.Location = new Point(227, 74);
             lbl_nome_insumo.Name = "lbl_nome_insumo";
             lbl_nome_insumo.Size = new Size(45, 17);
             lbl_nome_insumo.TabIndex = 16;
@@ -119,7 +121,7 @@
             lbl_status_insumo.BackColor = Color.White;
             lbl_status_insumo.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_status_insumo.ForeColor = SystemColors.ControlDarkDark;
-            lbl_status_insumo.Location = new Point(423, 75);
+            lbl_status_insumo.Location = new Point(413, 74);
             lbl_status_insumo.Name = "lbl_status_insumo";
             lbl_status_insumo.Size = new Size(46, 17);
             lbl_status_insumo.TabIndex = 21;
@@ -127,14 +129,14 @@
             // 
             // txtbox_cod_insumo
             // 
-            txtbox_cod_insumo.Location = new Point(30, 96);
+            txtbox_cod_insumo.Location = new Point(40, 95);
             txtbox_cod_insumo.Name = "txtbox_cod_insumo";
             txtbox_cod_insumo.Size = new Size(159, 23);
             txtbox_cod_insumo.TabIndex = 22;
             // 
             // txtbox_nome_insumo
             // 
-            txtbox_nome_insumo.Location = new Point(224, 96);
+            txtbox_nome_insumo.Location = new Point(227, 95);
             txtbox_nome_insumo.Name = "txtbox_nome_insumo";
             txtbox_nome_insumo.Size = new Size(159, 23);
             txtbox_nome_insumo.TabIndex = 23;
@@ -142,7 +144,8 @@
             // combobox_status_insumo
             // 
             combobox_status_insumo.FormattingEnabled = true;
-            combobox_status_insumo.Location = new Point(423, 95);
+            combobox_status_insumo.Items.AddRange(new object[] { "Ativo", "Inativo" });
+            combobox_status_insumo.Location = new Point(413, 95);
             combobox_status_insumo.Name = "combobox_status_insumo";
             combobox_status_insumo.Size = new Size(187, 23);
             combobox_status_insumo.TabIndex = 24;
@@ -152,7 +155,7 @@
             btn_add_insumo.BackColor = Color.Green;
             btn_add_insumo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_add_insumo.ForeColor = Color.White;
-            btn_add_insumo.Location = new Point(651, 94);
+            btn_add_insumo.Location = new Point(40, 151);
             btn_add_insumo.Name = "btn_add_insumo";
             btn_add_insumo.Size = new Size(144, 23);
             btn_add_insumo.TabIndex = 25;
@@ -165,7 +168,7 @@
             btn_consultar_insumo.BackColor = Color.Green;
             btn_consultar_insumo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_consultar_insumo.ForeColor = Color.White;
-            btn_consultar_insumo.Location = new Point(834, 94);
+            btn_consultar_insumo.Location = new Point(227, 151);
             btn_consultar_insumo.Name = "btn_consultar_insumo";
             btn_consultar_insumo.Size = new Size(144, 23);
             btn_consultar_insumo.TabIndex = 26;
@@ -177,9 +180,9 @@
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 155);
+            dataGridView1.Location = new Point(12, 193);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(984, 447);
+            dataGridView1.Size = new Size(984, 409);
             dataGridView1.TabIndex = 27;
             // 
             // btn_insumos_voltar
@@ -195,12 +198,36 @@
             btn_insumos_voltar.UseVisualStyleBackColor = false;
             btn_insumos_voltar.Click += btn_insumos_voltar_Click;
             // 
+            // btn_pesquisar
+            // 
+            btn_pesquisar.Location = new Point(874, 95);
+            btn_pesquisar.Name = "btn_pesquisar";
+            btn_pesquisar.Size = new Size(88, 24);
+            btn_pesquisar.TabIndex = 81;
+            btn_pesquisar.Text = "Pesquisar";
+            btn_pesquisar.UseVisualStyleBackColor = true;
+            // 
+            // btn_att_insumo
+            // 
+            btn_att_insumo.BackColor = Color.Green;
+            btn_att_insumo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_att_insumo.ForeColor = Color.White;
+            btn_att_insumo.Location = new Point(413, 151);
+            btn_att_insumo.Name = "btn_att_insumo";
+            btn_att_insumo.Size = new Size(144, 23);
+            btn_att_insumo.TabIndex = 82;
+            btn_att_insumo.Text = "Editar Insumo";
+            btn_att_insumo.UseVisualStyleBackColor = false;
+            btn_att_insumo.Click += btn_att_insumo_Click;
+            // 
             // TelaInsumos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_att_insumo);
+            Controls.Add(btn_pesquisar);
             Controls.Add(btn_insumos_voltar);
             Controls.Add(dataGridView1);
             Controls.Add(btn_consultar_insumo);
@@ -244,5 +271,8 @@
         private Button btn_consultar_insumo;
         private Button btn_insumos_voltar;
         public DataGridView dataGridView1;
+        private Button btn_pesquisar;
+        private Button button1;
+        private Button btn_att_insumo;
     }
 }

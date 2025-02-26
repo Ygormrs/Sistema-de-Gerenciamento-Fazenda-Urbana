@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaGerenciamentoFazendaUrbana")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b3b5b6e456ad3e10d2d338ed4a1a16e444f0c1b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01d5e201814ebdc940daaa58e7c3f9a1918629f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaGerenciamentoFazendaUrbana")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaGerenciamentoFazendaUrbana")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

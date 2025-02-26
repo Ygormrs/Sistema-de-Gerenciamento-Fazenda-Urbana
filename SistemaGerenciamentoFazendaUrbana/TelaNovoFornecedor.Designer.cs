@@ -68,6 +68,7 @@
             rb_nf_status_inativo = new RadioButton();
             txtbox_nf_codigo = new TextBox();
             lbl_nf_codigo = new Label();
+            btn_att_nf = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -469,7 +470,7 @@
             rb_nf_status_inativo.BackColor = Color.White;
             rb_nf_status_inativo.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             rb_nf_status_inativo.ForeColor = SystemColors.ControlDarkDark;
-            rb_nf_status_inativo.Location = new Point(610, 155);
+            rb_nf_status_inativo.Location = new Point(610, 156);
             rb_nf_status_inativo.Name = "rb_nf_status_inativo";
             rb_nf_status_inativo.Size = new Size(64, 19);
             rb_nf_status_inativo.TabIndex = 3;
@@ -496,11 +497,24 @@
             lbl_nf_codigo.TabIndex = 81;
             lbl_nf_codigo.Text = "Codigo";
             // 
+            // btn_att_nf
+            // 
+            btn_att_nf.BackColor = Color.YellowGreen;
+            btn_att_nf.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_att_nf.Location = new Point(447, 617);
+            btn_att_nf.Name = "btn_att_nf";
+            btn_att_nf.Size = new Size(75, 23);
+            btn_att_nf.TabIndex = 157;
+            btn_att_nf.Text = "Atualizar";
+            btn_att_nf.UseVisualStyleBackColor = false;
+            btn_att_nf.Click += btn_att_nf_Click;
+            // 
             // TelaNovoFornecedor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_att_nf);
             Controls.Add(lbl_nf_codigo);
             Controls.Add(txtbox_nf_codigo);
             Controls.Add(rb_nf_status_inativo);
@@ -545,7 +559,6 @@
             Name = "TelaNovoFornecedor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nexus Urban Farm";
-            FormClosing += TelaNovoFornecedor_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -595,5 +608,6 @@
         public MaskedTextBox msktxtbox_nf_cnpj;
         public RadioButton rb_nf_status_ativo;
         public RadioButton rb_nf_status_inativo;
+        public Button btn_att_nf;
     }
 }

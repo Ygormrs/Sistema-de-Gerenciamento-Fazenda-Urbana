@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtbox_ni_quantidadedisponivel = new TextBox();
+            txtbox_ni_quantidade = new TextBox();
             btn_ni_salvar = new Button();
             btn_ni_voltar = new Button();
             txtbox_ni_nomeinsumo = new TextBox();
@@ -43,15 +43,16 @@
             msktxtbox_ni_cnpj_fornecedor = new MaskedTextBox();
             txtbox_ni_codigo = new TextBox();
             label1 = new Label();
+            btn_att_ni = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1_novoinsumo).BeginInit();
             SuspendLayout();
             // 
-            // txtbox_ni_quantidadedisponivel
+            // txtbox_ni_quantidade
             // 
-            txtbox_ni_quantidadedisponivel.Location = new Point(27, 259);
-            txtbox_ni_quantidadedisponivel.Name = "txtbox_ni_quantidadedisponivel";
-            txtbox_ni_quantidadedisponivel.Size = new Size(329, 23);
-            txtbox_ni_quantidadedisponivel.TabIndex = 2;
+            txtbox_ni_quantidade.Location = new Point(27, 259);
+            txtbox_ni_quantidade.Name = "txtbox_ni_quantidade";
+            txtbox_ni_quantidade.Size = new Size(329, 23);
+            txtbox_ni_quantidade.TabIndex = 2;
             // 
             // btn_ni_salvar
             // 
@@ -201,17 +202,30 @@
             label1.TabIndex = 114;
             label1.Text = "Código";
             // 
+            // btn_att_ni
+            // 
+            btn_att_ni.BackColor = Color.YellowGreen;
+            btn_att_ni.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_att_ni.Location = new Point(154, 520);
+            btn_att_ni.Name = "btn_att_ni";
+            btn_att_ni.Size = new Size(75, 23);
+            btn_att_ni.TabIndex = 156;
+            btn_att_ni.Text = "Atualizar";
+            btn_att_ni.UseVisualStyleBackColor = false;
+            btn_att_ni.Click += btn_att_ni_Click;
+            // 
             // TelaNovoInsumo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(384, 561);
+            Controls.Add(btn_att_ni);
             Controls.Add(label1);
             Controls.Add(txtbox_ni_codigo);
             Controls.Add(msktxtbox_ni_cnpj_fornecedor);
             Controls.Add(lbl_ni_cnpj_fornecedor);
             Controls.Add(combobox_ni_tipoinsumo);
-            Controls.Add(txtbox_ni_quantidadedisponivel);
+            Controls.Add(txtbox_ni_quantidade);
             Controls.Add(btn_ni_salvar);
             Controls.Add(btn_ni_voltar);
             Controls.Add(txtbox_ni_nomeinsumo);
@@ -225,7 +239,6 @@
             Name = "TelaNovoInsumo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nexus Urban Farm";
-            FormClosing += TelaNovoInsumo_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox1_novoinsumo).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -238,7 +251,7 @@
         private Label lbl_dadosdoinsumo;
         private PictureBox pictureBox1_novoinsumo;
         private Label lbl_ni_cnpj_fornecedor;
-        public TextBox txtbox_ni_quantidadedisponivel;
+        public TextBox txtbox_ni_quantidade;
         public TextBox txtbox_ni_nomeinsumo;
         public ComboBox combobox_ni_tipoinsumo;
         public MaskedTextBox msktxtbox_ni_cnpj_fornecedor;
@@ -247,5 +260,7 @@
         public TextBox txtbox_ni_codigo;
         private Label label1;
         public Label lbl_novoinsumo;
+        public Button btn_att_np;
+        public Button btn_att_ni;
     }
 }
