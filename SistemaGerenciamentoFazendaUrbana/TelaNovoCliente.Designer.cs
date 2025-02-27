@@ -68,6 +68,7 @@
             msktxtbox_nc_cnpj = new MaskedTextBox();
             txtbox_nc_codigo = new TextBox();
             lbl_nc_codigo = new Label();
+            btn_att_nc = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -496,11 +497,24 @@
             lbl_nc_codigo.TabIndex = 114;
             lbl_nc_codigo.Text = "Código";
             // 
+            // btn_att_nc
+            // 
+            btn_att_nc.BackColor = Color.YellowGreen;
+            btn_att_nc.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_att_nc.Location = new Point(447, 622);
+            btn_att_nc.Name = "btn_att_nc";
+            btn_att_nc.Size = new Size(75, 23);
+            btn_att_nc.TabIndex = 156;
+            btn_att_nc.Text = "Atualizar";
+            btn_att_nc.UseVisualStyleBackColor = false;
+            btn_att_nc.Click += btn_att_nc_Click;
+            // 
             // TelaNovoCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_att_nc);
             Controls.Add(lbl_nc_codigo);
             Controls.Add(txtbox_nc_codigo);
             Controls.Add(msktxtbox_nc_cnpj);
@@ -546,7 +560,7 @@
             Name = "TelaNovoCliente";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nexus Urban Farm";
-            FormClosing += TelaNovoCliente_FormClosing;
+            //FormClosing += TelaNovoCliente_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -595,5 +609,6 @@
         public RadioButton rb_nc_status_ativo;
         public RadioButton rb_nc_status_inativo;
         public Label lbl_novocliente;
+        public Button btn_att_nc;
     }
 }

@@ -43,6 +43,7 @@
             btn_consultar_cliente = new Button();
             dataGridView1 = new DataGridView();
             btn_clientes_voltar = new Button();
+            btn_pesquisar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -166,19 +167,20 @@
             btn_editar_cliente.BackColor = Color.Green;
             btn_editar_cliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_editar_cliente.ForeColor = Color.White;
-            btn_editar_cliente.Location = new Point(436, 153);
+            btn_editar_cliente.Location = new Point(215, 153);
             btn_editar_cliente.Name = "btn_editar_cliente";
             btn_editar_cliente.Size = new Size(144, 23);
             btn_editar_cliente.TabIndex = 4;
             btn_editar_cliente.Text = "Editar Cliente";
             btn_editar_cliente.UseVisualStyleBackColor = false;
+            btn_editar_cliente.Click += btn_editar_cliente_Click;
             // 
             // btn_consultar_cliente
             // 
             btn_consultar_cliente.BackColor = Color.Green;
             btn_consultar_cliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_consultar_cliente.ForeColor = Color.White;
-            btn_consultar_cliente.Location = new Point(821, 153);
+            btn_consultar_cliente.Location = new Point(405, 153);
             btn_consultar_cliente.Name = "btn_consultar_cliente";
             btn_consultar_cliente.Size = new Size(144, 23);
             btn_consultar_cliente.TabIndex = 5;
@@ -211,12 +213,22 @@
             btn_clientes_voltar.UseVisualStyleBackColor = false;
             btn_clientes_voltar.Click += btn_clientes_voltar_Click;
             // 
+            // btn_pesquisar
+            // 
+            btn_pesquisar.Location = new Point(862, 101);
+            btn_pesquisar.Name = "btn_pesquisar";
+            btn_pesquisar.Size = new Size(88, 24);
+            btn_pesquisar.TabIndex = 83;
+            btn_pesquisar.Text = "Pesquisar";
+            btn_pesquisar.UseVisualStyleBackColor = true;
+            // 
             // TelaClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(224, 224, 224);
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_pesquisar);
             Controls.Add(btn_clientes_voltar);
             Controls.Add(dataGridView1);
             Controls.Add(btn_consultar_cliente);
@@ -262,5 +274,6 @@
         private Button btn_consultar_cliente;
         private DataGridView dataGridView1;
         private Button btn_clientes_voltar;
+        private Button btn_pesquisar;
     }
 }

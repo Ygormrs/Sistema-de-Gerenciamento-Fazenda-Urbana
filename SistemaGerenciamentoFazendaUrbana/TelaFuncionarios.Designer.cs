@@ -43,6 +43,7 @@
             btn_consultar_funcionario = new Button();
             dataGridView1 = new DataGridView();
             btn_funcionarios_voltar = new Button();
+            btn_pesquisar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -172,6 +173,7 @@
             btn_editar_funcionario.TabIndex = 37;
             btn_editar_funcionario.Text = "Editar Funcionario";
             btn_editar_funcionario.UseVisualStyleBackColor = false;
+            btn_editar_funcionario.Click += btn_editar_funcionario_Click;
             // 
             // btn_consultar_funcionario
             // 
@@ -208,11 +210,21 @@
             btn_funcionarios_voltar.UseVisualStyleBackColor = false;
             btn_funcionarios_voltar.Click += btn_funcionarios_voltar_Click;
             // 
+            // btn_pesquisar
+            // 
+            btn_pesquisar.Location = new Point(878, 98);
+            btn_pesquisar.Name = "btn_pesquisar";
+            btn_pesquisar.Size = new Size(88, 24);
+            btn_pesquisar.TabIndex = 84;
+            btn_pesquisar.Text = "Pesquisar";
+            btn_pesquisar.UseVisualStyleBackColor = true;
+            // 
             // TelaFuncionarios
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_pesquisar);
             Controls.Add(btn_funcionarios_voltar);
             Controls.Add(dataGridView1);
             Controls.Add(btn_consultar_funcionario);
@@ -258,5 +270,6 @@
         private Button btn_consultar_funcionario;
         private DataGridView dataGridView1;
         private Button btn_funcionarios_voltar;
+        private Button btn_pesquisar;
     }
 }

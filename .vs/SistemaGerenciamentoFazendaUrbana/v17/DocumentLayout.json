@@ -3,56 +3,40 @@
   "WorkspaceRootPath": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telafornecedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telafornecedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telafuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telafuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telanovofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telanovofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\sistemagerenciamentofazendaurbana\\telafuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telafuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telanovaproducao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telanovaproducao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telafuncionarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telafuncionarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telafornecedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telafornecedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telanovocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telanovocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telanovofuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telanovofuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\sistemagerenciamentofazendaurbana\\telanovofuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telanovofuncionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\sistemagerenciamentofazendaurbana\\telaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telanovofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telanovofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telaproducao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telaproducao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telainsumos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telainsumos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telanovaproducao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telanovaproducao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telanovofornecedor.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telanovofornecedor.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telainsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telainsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telainsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telainsumos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telanovoinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telanovoinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|e:\\faculdade\\pim4\\sistema de gerenciamento\\sistemagerenciamentofazendaurbana\\sistemagerenciamentofazendaurbana\\telanovoinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|solutionrelative:sistemagerenciamentofazendaurbana\\telanovoinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E52715A3-31A5-440B-9B86-4A73A10949F4}|SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana.csproj|E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\sistemagerenciamentofazendaurbana\\telaproducao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -66,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,179 +62,122 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TelaFornecedores.cs",
-              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaFornecedores.cs",
-              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaFornecedores.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaFornecedores.cs",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaFornecedores.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "TelaFuncionarios.Designer.cs",
+              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.Designer.cs",
+              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.Designer.cs",
+              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.Designer.cs",
+              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.Designer.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAiwI4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T17:19:14.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TelaNovaProducao.cs [Projeto]",
-              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovaProducao.cs",
-              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaNovaProducao.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovaProducao.cs [Projeto]",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaNovaProducao.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T17:01:41.149Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TelaInsumos.Designer.cs",
-              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaInsumos.Designer.cs",
-              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaInsumos.Designer.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaInsumos.Designer.cs",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaInsumos.Designer.cs",
-              "ViewState": "AgIAANsAAAAAAAAAAAAiwO0AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T16:51:41.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T15:03:05.972Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TelaNovoFornecedor.cs",
-              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.cs",
-              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.cs",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwG8AAAAfAAAAAAAAAA==",
+              "Title": "TelaNovoFuncionario.cs",
+              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoFuncionario.cs",
+              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaNovoFuncionario.cs",
+              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoFuncionario.cs",
+              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaNovoFuncionario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T16:32:13.214Z",
+              "WhenOpened": "2025-02-27T14:54:13.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TelaNovoFuncionario.cs [Projeto]",
+              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoFuncionario.cs",
+              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaNovoFuncionario.cs",
+              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoFuncionario.cs [Projeto]",
+              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaNovoFuncionario.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T14:53:48.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TelaFuncionarios.cs [Design]",
+              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.cs",
+              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.cs",
+              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.cs [Design]",
+              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T14:52:09.253Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TelaFuncionarios.cs",
+              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.cs",
+              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.cs",
+              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.cs",
+              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaFuncionarios.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAWwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T14:49:17.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TelaFornecedores.cs [Projeto]",
-              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaFornecedores.cs",
-              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaFornecedores.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaFornecedores.cs [Projeto]",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaFornecedores.cs [Projeto]",
+              "Title": "TelaNovoCliente.cs",
+              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoCliente.cs",
+              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaNovoCliente.cs",
+              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoCliente.cs",
+              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaNovoCliente.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwHkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T16:29:44.797Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-02-27T14:27:56.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TelaNovaProducao.cs",
-              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovaProducao.cs",
-              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaNovaProducao.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovaProducao.cs",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaNovaProducao.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCcAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "TelaClientes.cs [Projeto]",
+              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaClientes.cs",
+              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaClientes.cs",
+              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaClientes.cs [Projeto]",
+              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaClientes.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T16:45:48.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T14:29:21.561Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TelaNovoFornecedor.cs [Projeto]",
+              "DocumentIndex": 7,
+              "Title": "TelaNovoFornecedor.cs",
               "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.cs",
               "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.cs [Projeto]",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.cs [Projeto]",
+              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.cs",
+              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T16:32:15.835Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TelaProducao.cs",
-              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaProducao.cs",
-              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaProducao.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaProducao.cs",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaProducao.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwDkAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T22:19:26.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T16:32:13.214Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "TelaNovoFornecedor.Designer.cs",
-              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.Designer.cs",
-              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.Designer.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.Designer.cs",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaNovoFornecedor.Designer.cs",
-              "ViewState": "AgIAAA8CAAAAAAAAAAAiwCkCAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T17:06:01.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TelaInsumos.cs [Projeto]",
-              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaInsumos.cs",
-              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaInsumos.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaInsumos.cs [Projeto]",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaInsumos.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T16:51:31.879Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TelaInsumos.cs",
-              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaInsumos.cs",
-              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaInsumos.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaInsumos.cs",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaInsumos.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAjwEsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T16:03:40.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TelaNovoInsumo.cs [Projeto]",
-              "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoInsumo.cs",
-              "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaNovoInsumo.cs",
-              "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoInsumo.cs [Projeto]",
-              "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaNovoInsumo.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T15:59:07.783Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "TelaNovoInsumo.cs",
               "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoInsumo.cs",
               "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaNovoInsumo.cs",
               "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaNovoInsumo.cs",
               "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaNovoInsumo.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAswFsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAswG0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T15:58:11.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T15:58:11.012Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "TelaProducao.cs [Projeto]",
               "DocumentMoniker": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaProducao.cs",
               "RelativeDocumentMoniker": "SistemaGerenciamentoFazendaUrbana\\TelaProducao.cs",
               "ToolTip": "E:\\faculdade\\PIM4\\Sistema de Gerenciamento\\SistemaGerenciamentoFazendaUrbana\\SistemaGerenciamentoFazendaUrbana\\TelaProducao.cs [Projeto]",
               "RelativeToolTip": "SistemaGerenciamentoFazendaUrbana\\TelaProducao.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T23:45:23.042Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2024-11-25T23:45:23.042Z"
             }
           ]
         }

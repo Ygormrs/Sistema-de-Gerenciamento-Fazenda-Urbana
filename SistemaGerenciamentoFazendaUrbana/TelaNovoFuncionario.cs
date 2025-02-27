@@ -67,13 +67,55 @@ namespace SistemaGerenciamentoFazendaUrbana
             return resultado == DialogResult.Yes; // Retorna true se o usuário clicar em "Sim"
         }
 
-        private void TelaNovoFuncionario_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult dlg = MessageBox.Show("Você realmente deseja voltar?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        //private void TelaNovoFuncionario_FormClosing(object sender, FormClosingEventArgs e)
+        //{
+        //    DialogResult dlg = MessageBox.Show("Você realmente deseja voltar?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (dlg == DialogResult.No)
+        //    if (dlg == DialogResult.No)
+        //    {
+        //        e.Cancel = true;
+        //    }
+        //}
+
+        private void btn_att_nfunc_Click(object sender, EventArgs e)
+        {
+            SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-5VTI9UI\SQLSERVER2022; integrated security=SSPI; initial catalog=DigitalNexus");
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = cn; // Associar conexão ao comando
+
+            // Alteração do comando SQL para UPDATE
+            cmd.CommandText = "UPDATE Funcionarios SET " +
+                              "Nome = @nome, " +
+                              "CPF = @cpf, " +
+                              "Equipe = @equipe, " +
+                              "Email = @email " +
+                              "WHERE IDFuncionario = @codigo"; // Supondo que você use o "Codigo" como chave primária
+
+            // Adicionar parâmetros ao comando
+            cmd.Parameters.Add("@nome", SqlDbType.VarChar).Value = txtbox_nfunc_nomecompleto.Text;
+            cmd.Parameters.Add("@cpf", SqlDbType.VarChar).Value = msktxtbox_nfun_cpf.Text;
+            cmd.Parameters.Add("@equipe", SqlDbType.VarChar).Value = combobox_nfunc_equipe.Text;
+            cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = txtbox_nfunc_email.Text;
+
+            // Supondo que o código do produto esteja no TextBox `txtbox_np_codigoprod`
+            cmd.Parameters.Add("@codigo", SqlDbType.Int).Value = int.TryParse(txtbox_nfunc_codigo.Text, out int codigo) ? codigo : 0;
+
+
+            try
             {
-                e.Cancel = true;
+                cn.Open(); // Abre a conexão
+                cmd.ExecuteNonQuery(); // Executa o comando de atualização
+
+                MessageBox.Show("Dados atualizados com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao atualizar os dados: {ex.Message}");
+            }
+            finally
+            {
+                cn.Close(); // Fecha a conexão
+                this.Hide();
             }
         }
     }

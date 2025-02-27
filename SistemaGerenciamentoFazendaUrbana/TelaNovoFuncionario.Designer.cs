@@ -43,6 +43,7 @@
             msktxtbox_nfun_cpf = new MaskedTextBox();
             txtbox_nfunc_codigo = new TextBox();
             lbl_nfunc_codigo = new Label();
+            btn_att_nfunc = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1_novofuncionario).BeginInit();
             SuspendLayout();
             // 
@@ -202,11 +203,24 @@
             lbl_nfunc_codigo.TabIndex = 99;
             lbl_nfunc_codigo.Text = "Código";
             // 
+            // btn_att_nfunc
+            // 
+            btn_att_nfunc.BackColor = Color.YellowGreen;
+            btn_att_nfunc.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_att_nfunc.Location = new Point(156, 520);
+            btn_att_nfunc.Name = "btn_att_nfunc";
+            btn_att_nfunc.Size = new Size(75, 23);
+            btn_att_nfunc.TabIndex = 156;
+            btn_att_nfunc.Text = "Atualizar";
+            btn_att_nfunc.UseVisualStyleBackColor = false;
+            btn_att_nfunc.Click += btn_att_nfunc_Click;
+            // 
             // TelaNovoFuncionario
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(384, 561);
+            Controls.Add(btn_att_nfunc);
             Controls.Add(lbl_nfunc_codigo);
             Controls.Add(txtbox_nfunc_codigo);
             Controls.Add(msktxtbox_nfun_cpf);
@@ -226,7 +240,7 @@
             Name = "TelaNovoFuncionario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nexus Urban Farm";
-            FormClosing += TelaNovoFuncionario_FormClosing;
+            //FormClosing += TelaNovoFuncionario_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox1_novofuncionario).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -249,5 +263,6 @@
         public Label lbl_novofuncionario;
         public TextBox txtbox_nfunc_codigo;
         public Label lbl_nfunc_codigo;
+        public Button btn_att_nfunc;
     }
 }

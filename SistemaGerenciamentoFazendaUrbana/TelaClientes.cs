@@ -27,6 +27,7 @@ namespace SistemaGerenciamentoFazendaUrbana
         private void btn_add_cliente_Click(object sender, EventArgs e)
         {
             TelaNovoCliente FormMain = new TelaNovoCliente();
+            FormMain.btn_att_nc.Visible = false;
             FormMain.ShowDialog();
         }
 
@@ -49,6 +50,7 @@ namespace SistemaGerenciamentoFazendaUrbana
             TelaNovoCliente FormMain = new TelaNovoCliente();
             FormMain.lbl_novocliente.Text = "Consulta Cliente";
             FormMain.btn_nc_salvar.Visible = false;
+            FormMain.btn_att_nc.Visible = false;
             FormMain.txtbox_nc_codigo.Text = dataGridView1.CurrentRow.Cells["IDCliente"].Value.ToString();
             FormMain.msktxtbox_nc_cnpj.Enabled = false;
             FormMain.msktxtbox_nc_cnpj.Text = dataGridView1.CurrentRow.Cells["CNPJ"].Value.ToString();
@@ -97,6 +99,38 @@ namespace SistemaGerenciamentoFazendaUrbana
             {
                 e.Cancel = true;
             }
+        }
+
+        private void btn_editar_cliente_Click(object sender, EventArgs e)
+        {
+
+            TelaNovoCliente FormMain = new TelaNovoCliente();
+            FormMain.lbl_novocliente.Text = "Editar Cliente";
+            FormMain.btn_nc_salvar.Visible = false;
+            FormMain.txtbox_nc_codigo.Text = dataGridView1.CurrentRow.Cells["IDCliente"].Value.ToString();
+            FormMain.msktxtbox_nc_cnpj.Text = dataGridView1.CurrentRow.Cells["CNPJ"].Value.ToString();
+            FormMain.txtbox_nc_razaosocial.Text = dataGridView1.CurrentRow.Cells["RazaoSocial"].Value.ToString();
+            FormMain.txtbox_nc_nomefantasia.Text = dataGridView1.CurrentRow.Cells["NomeFantasia"].Value.ToString();
+            FormMain.msktxtbox_nc_cep.Text = dataGridView1.CurrentRow.Cells["CEP"].Value.ToString();
+            FormMain.combobox_nc_estado.Text = dataGridView1.CurrentRow.Cells["Estado"].Value.ToString();
+            FormMain.txtbox_nc_cidade.Text = dataGridView1.CurrentRow.Cells["Cidade"].Value.ToString();
+            FormMain.txtbox_nc_bairro.Text = dataGridView1.CurrentRow.Cells["Bairro"].Value.ToString();
+            FormMain.txtbox_nc_rua.Text = dataGridView1.CurrentRow.Cells["Rua"].Value.ToString();
+            FormMain.txtbox_nc_numero.Text = dataGridView1.CurrentRow.Cells["Numero"].Value.ToString();
+            FormMain.txtbox_nc_complemento.Text = dataGridView1.CurrentRow.Cells["Complemento"].Value.ToString();
+            FormMain.msktxtbox_nc_telefone.Text = dataGridView1.CurrentRow.Cells["Telefone"].Value.ToString();
+            FormMain.txtbox_nc_email.Text = dataGridView1.CurrentRow.Cells["Email"].Value.ToString();
+            FormMain.txtbox_nc_nomerepresentante.Text = dataGridView1.CurrentRow.Cells["NomeRepresentante"].Value.ToString();
+
+            if (FormMain.rb_nc_status_ativo.Checked == true)
+            {
+                FormMain.rb_nc_status_ativo.Text = dataGridView1.CurrentRow.Cells["StatusCliente"].Value.ToString();
+            }
+            else
+            {
+                FormMain.rb_nc_status_inativo.Text = dataGridView1.CurrentRow.Cells["StatusCliente"].Value.ToString();
+            }
+            FormMain.ShowDialog();
         }
     }
 }

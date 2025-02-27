@@ -21,6 +21,7 @@ namespace SistemaGerenciamentoFazendaUrbana
         private void btn_add_funcionario_Click(object sender, EventArgs e)
         {
             TelaNovoFuncionario FormMain = new TelaNovoFuncionario();
+            FormMain.btn_att_nfunc.Visible = false;
             FormMain.ShowDialog();
         }
 
@@ -49,6 +50,7 @@ namespace SistemaGerenciamentoFazendaUrbana
             TelaNovoFuncionario FormMain = new TelaNovoFuncionario();
             FormMain.lbl_novofuncionario.Text = "Consulta Funcionário";
             FormMain.btn_nfunc_salvar.Visible = false;
+
             FormMain.txtbox_nfunc_codigo.Text = dataGridView1.CurrentRow.Cells["IDFuncionario"].Value.ToString();
             FormMain.txtbox_nfunc_codigo.Enabled = false;
             FormMain.msktxtbox_nfun_cpf.Text = dataGridView1.CurrentRow.Cells["CPF"].Value.ToString();
@@ -70,6 +72,19 @@ namespace SistemaGerenciamentoFazendaUrbana
             {
                 e.Cancel = true;
             }
+        }
+
+        private void btn_editar_funcionario_Click(object sender, EventArgs e)
+        {
+
+            TelaNovoFuncionario FormMain = new TelaNovoFuncionario();
+            FormMain.lbl_novofuncionario.Text = "Editar Funcionário";
+            FormMain.txtbox_nfunc_codigo.Text = dataGridView1.CurrentRow.Cells["IDFuncionario"].Value.ToString();
+            FormMain.msktxtbox_nfun_cpf.Text = dataGridView1.CurrentRow.Cells["CPF"].Value.ToString();
+            FormMain.txtbox_nfunc_nomecompleto.Text = dataGridView1.CurrentRow.Cells["Nome"].Value.ToString();
+            FormMain.txtbox_nfunc_email.Text = dataGridView1.CurrentRow.Cells["Email"].Value.ToString();
+            FormMain.combobox_nfunc_equipe.Text = dataGridView1.CurrentRow.Cells["Equipe"].Value.ToString();
+            FormMain.ShowDialog();
         }
     }
 }
