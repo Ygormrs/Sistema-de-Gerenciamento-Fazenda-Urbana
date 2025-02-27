@@ -45,6 +45,7 @@
             txtbox_codigo_compra = new TextBox();
             lbl_dadosdacompra = new Label();
             lbl_codigo_compra = new Label();
+            btn_att_novacompra = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -185,7 +186,6 @@
             msktxtbox_nc_cnpj_forn.Name = "msktxtbox_nc_cnpj_forn";
             msktxtbox_nc_cnpj_forn.Size = new Size(309, 23);
             msktxtbox_nc_cnpj_forn.TabIndex = 101;
-            msktxtbox_nc_cnpj_forn.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // txtbox_nc_solicitante
             // 
@@ -226,11 +226,24 @@
             lbl_codigo_compra.TabIndex = 105;
             lbl_codigo_compra.Text = "Código";
             // 
+            // btn_att_novacompra
+            // 
+            btn_att_novacompra.BackColor = Color.YellowGreen;
+            btn_att_novacompra.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_att_novacompra.Location = new Point(465, 627);
+            btn_att_novacompra.Name = "btn_att_novacompra";
+            btn_att_novacompra.Size = new Size(75, 23);
+            btn_att_novacompra.TabIndex = 158;
+            btn_att_novacompra.Text = "Atualizar";
+            btn_att_novacompra.UseVisualStyleBackColor = false;
+            btn_att_novacompra.Click += btn_att_novacompra_Click;
+            // 
             // TelaNovaCompra
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_att_novacompra);
             Controls.Add(lbl_codigo_compra);
             Controls.Add(lbl_dadosdacompra);
             Controls.Add(txtbox_codigo_compra);
@@ -254,7 +267,6 @@
             Name = "TelaNovaCompra";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nexus Urban Farm";
-            FormClosing += TelaNovaCompra_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -281,5 +293,6 @@
         private Label lbl_dadosdacompra;
         private Label lbl_codigo_compra;
         public Label lbl_novacompra;
+        public Button btn_att_novacompra;
     }
 }

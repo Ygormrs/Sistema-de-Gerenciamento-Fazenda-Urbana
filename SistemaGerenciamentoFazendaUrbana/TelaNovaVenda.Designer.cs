@@ -45,6 +45,7 @@
             btn_nv_voltar = new Button();
             txtbox_nv_codigo = new TextBox();
             lbl_codigo_venda = new Label();
+            btn_att_ncompra = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -114,6 +115,7 @@
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
             dateTimePicker1.Location = new Point(696, 263);
             dateTimePicker1.MaxDate = new DateTime(2100, 12, 31, 0, 0, 0, 0);
             dateTimePicker1.MinDate = new DateTime(2024, 1, 1, 0, 0, 0, 0);
@@ -228,11 +230,24 @@
             lbl_codigo_venda.TabIndex = 105;
             lbl_codigo_venda.Text = "Código";
             // 
+            // btn_att_ncompra
+            // 
+            btn_att_ncompra.BackColor = Color.YellowGreen;
+            btn_att_ncompra.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_att_ncompra.Location = new Point(463, 620);
+            btn_att_ncompra.Name = "btn_att_ncompra";
+            btn_att_ncompra.Size = new Size(75, 23);
+            btn_att_ncompra.TabIndex = 158;
+            btn_att_ncompra.Text = "Atualizar";
+            btn_att_ncompra.UseVisualStyleBackColor = false;
+            btn_att_ncompra.Click += btn_att_ncompra_Click;
+            // 
             // TelaNovaVenda
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_att_ncompra);
             Controls.Add(lbl_codigo_venda);
             Controls.Add(txtbox_nv_codigo);
             Controls.Add(btn_nv_salvar);
@@ -255,7 +270,6 @@
             Name = "TelaNovaVenda";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nexus Urban Farm";
-            FormClosing += TelaNovaVenda_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -282,5 +296,6 @@
         public TextBox txtbox_nv_codigo;
         public DateTimePicker dateTimePicker1;
         public TextBox txtbox_nv_quantidade;
+        public Button btn_att_ncompra;
     }
 }

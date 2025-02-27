@@ -27,6 +27,7 @@ namespace SistemaGerenciamentoFazendaUrbana
         private void btn_add_venda_Click(object sender, EventArgs e)
         {
             TelaNovaVenda FormMain = new TelaNovaVenda();
+            FormMain.btn_att_ncompra.Visible = false;
             FormMain.Show();
         }
 
@@ -48,6 +49,7 @@ namespace SistemaGerenciamentoFazendaUrbana
             TelaNovaVenda FormMain = new TelaNovaVenda();
             FormMain.lbl_novavenda.Text = "Consulta Venda";
             FormMain.btn_nv_salvar.Visible = false;
+            FormMain.btn_att_ncompra.Visible = false;
             FormMain.txtbox_nv_codigo.Text = dataGridView1.CurrentRow.Cells["IDVenda"].Value.ToString();
             FormMain.msktxtbox_nv_cnpj.Enabled = false;
             FormMain.msktxtbox_nv_cnpj.Text = dataGridView1.CurrentRow.Cells["CNPJ"].Value.ToString();
@@ -68,6 +70,19 @@ namespace SistemaGerenciamentoFazendaUrbana
             {
                 e.Cancel = true;
             }
+        }
+
+        private void btn_att_venda_Click(object sender, EventArgs e)
+        {
+            TelaNovaVenda FormMain = new TelaNovaVenda();
+            FormMain.lbl_novavenda.Text = "Editar Venda";
+            FormMain.btn_nv_salvar.Visible = false;
+            FormMain.txtbox_nv_codigo.Text = dataGridView1.CurrentRow.Cells["IDVenda"].Value.ToString();
+            FormMain.msktxtbox_nv_cnpj.Text = dataGridView1.CurrentRow.Cells["CNPJ"].Value.ToString();
+            FormMain.combobox_nv_produto.Text = dataGridView1.CurrentRow.Cells["Produto"].Value.ToString();
+            FormMain.txtbox_nv_quantidade.Text = dataGridView1.CurrentRow.Cells["Quantidade"].Value.ToString();
+            FormMain.dateTimePicker1.Text = dataGridView1.CurrentRow.Cells["PrevisaoEntrega"].Value.ToString();
+            FormMain.ShowDialog();
         }
     }
 }

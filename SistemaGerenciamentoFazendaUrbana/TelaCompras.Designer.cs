@@ -40,6 +40,8 @@
             btn_consultarcompra = new Button();
             dataGridView1 = new DataGridView();
             btn_compras_voltar = new Button();
+            btn_editar_compra = new Button();
+            btn_pesquisar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -83,7 +85,7 @@
             pictureBox1.BackColor = Color.White;
             pictureBox1.Location = new Point(12, 62);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(984, 77);
+            pictureBox1.Size = new Size(984, 118);
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
             // 
@@ -131,7 +133,7 @@
             btn_solicitarcompra.BackColor = Color.Green;
             btn_solicitarcompra.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_solicitarcompra.ForeColor = Color.White;
-            btn_solicitarcompra.Location = new Point(638, 96);
+            btn_solicitarcompra.Location = new Point(35, 141);
             btn_solicitarcompra.Name = "btn_solicitarcompra";
             btn_solicitarcompra.Size = new Size(144, 23);
             btn_solicitarcompra.TabIndex = 28;
@@ -144,7 +146,7 @@
             btn_consultarcompra.BackColor = Color.Green;
             btn_consultarcompra.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_consultarcompra.ForeColor = Color.White;
-            btn_consultarcompra.Location = new Point(824, 95);
+            btn_consultarcompra.Location = new Point(405, 141);
             btn_consultarcompra.Name = "btn_consultarcompra";
             btn_consultarcompra.Size = new Size(144, 23);
             btn_consultarcompra.TabIndex = 29;
@@ -158,10 +160,10 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 145);
+            dataGridView1.Location = new Point(12, 186);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(984, 466);
+            dataGridView1.Size = new Size(984, 425);
             dataGridView1.TabIndex = 30;
             // 
             // btn_compras_voltar
@@ -177,11 +179,35 @@
             btn_compras_voltar.UseVisualStyleBackColor = false;
             btn_compras_voltar.Click += btn_compras_voltar_Click;
             // 
+            // btn_editar_compra
+            // 
+            btn_editar_compra.BackColor = Color.Green;
+            btn_editar_compra.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_editar_compra.ForeColor = Color.White;
+            btn_editar_compra.Location = new Point(223, 141);
+            btn_editar_compra.Name = "btn_editar_compra";
+            btn_editar_compra.Size = new Size(144, 23);
+            btn_editar_compra.TabIndex = 81;
+            btn_editar_compra.Text = "Editar Compra";
+            btn_editar_compra.UseVisualStyleBackColor = false;
+            btn_editar_compra.Click += btn_editar_compra_Click;
+            // 
+            // btn_pesquisar
+            // 
+            btn_pesquisar.Location = new Point(854, 96);
+            btn_pesquisar.Name = "btn_pesquisar";
+            btn_pesquisar.Size = new Size(88, 24);
+            btn_pesquisar.TabIndex = 85;
+            btn_pesquisar.Text = "Pesquisar";
+            btn_pesquisar.UseVisualStyleBackColor = true;
+            // 
             // TelaCompras
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_pesquisar);
+            Controls.Add(btn_editar_compra);
             Controls.Add(btn_compras_voltar);
             Controls.Add(dataGridView1);
             Controls.Add(btn_consultarcompra);
@@ -222,5 +248,7 @@
         private Button btn_consultarcompra;
         private DataGridView dataGridView1;
         private Button btn_compras_voltar;
+        private Button btn_editar_compra;
+        private Button btn_pesquisar;
     }
 }

@@ -39,6 +39,7 @@
             btn_ne_voltar = new Button();
             txtbox_codigo_equipe = new TextBox();
             lbl_codigo_equipe = new Label();
+            btn_att_ne = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1_novaequipe).BeginInit();
             SuspendLayout();
             // 
@@ -155,11 +156,24 @@
             lbl_codigo_equipe.TabIndex = 98;
             lbl_codigo_equipe.Text = "Código";
             // 
+            // btn_att_ne
+            // 
+            btn_att_ne.BackColor = Color.YellowGreen;
+            btn_att_ne.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_att_ne.Location = new Point(152, 526);
+            btn_att_ne.Name = "btn_att_ne";
+            btn_att_ne.Size = new Size(75, 23);
+            btn_att_ne.TabIndex = 157;
+            btn_att_ne.Text = "Atualizar";
+            btn_att_ne.UseVisualStyleBackColor = false;
+            btn_att_ne.Click += btn_att_ne_Click;
+            // 
             // TelaNovaEquipe
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(384, 561);
+            Controls.Add(btn_att_ne);
             Controls.Add(lbl_codigo_equipe);
             Controls.Add(txtbox_codigo_equipe);
             Controls.Add(btn_ne_salvar);
@@ -175,7 +189,7 @@
             Name = "TelaNovaEquipe";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nexus Urban Farm";
-            FormClosing += TelaNovaEquipe_FormClosing;
+            //FormClosing += TelaNovaEquipe_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox1_novaequipe).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -193,5 +207,6 @@
         public TextBox txtbox_ne_emaildolider;
         public Button btn_ne_salvar;
         public Button btn_ne_voltar;
+        public Button btn_att_ne;
     }
 }

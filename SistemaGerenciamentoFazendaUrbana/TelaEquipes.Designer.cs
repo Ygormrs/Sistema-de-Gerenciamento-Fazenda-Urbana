@@ -41,6 +41,9 @@
             dataGridView1 = new DataGridView();
             btn_equipes_voltar = new Button();
             btn_consulta_equipe = new Button();
+            btn_pesquisar = new Button();
+            lbl_equipes_area = new Label();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -84,7 +87,7 @@
             pictureBox1.BackColor = Color.White;
             pictureBox1.Location = new Point(12, 62);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(984, 77);
+            pictureBox1.Size = new Size(984, 115);
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
@@ -122,9 +125,10 @@
             // combobox_status_equipe
             // 
             combobox_status_equipe.FormattingEnabled = true;
+            combobox_status_equipe.Items.AddRange(new object[] { "Ativo", "Inativo" });
             combobox_status_equipe.Location = new Point(224, 97);
             combobox_status_equipe.Name = "combobox_status_equipe";
-            combobox_status_equipe.Size = new Size(187, 23);
+            combobox_status_equipe.Size = new Size(161, 23);
             combobox_status_equipe.TabIndex = 28;
             // 
             // btn_add_equipe
@@ -132,7 +136,7 @@
             btn_add_equipe.BackColor = Color.Green;
             btn_add_equipe.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_add_equipe.ForeColor = Color.White;
-            btn_add_equipe.Location = new Point(454, 97);
+            btn_add_equipe.Location = new Point(33, 143);
             btn_add_equipe.Name = "btn_add_equipe";
             btn_add_equipe.Size = new Size(144, 23);
             btn_add_equipe.TabIndex = 29;
@@ -145,12 +149,13 @@
             btn_editarquipe.BackColor = Color.Green;
             btn_editarquipe.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_editarquipe.ForeColor = Color.White;
-            btn_editarquipe.Location = new Point(646, 96);
+            btn_editarquipe.Location = new Point(224, 143);
             btn_editarquipe.Name = "btn_editarquipe";
             btn_editarquipe.Size = new Size(144, 23);
             btn_editarquipe.TabIndex = 30;
             btn_editarquipe.Text = "Editar Equipe";
             btn_editarquipe.UseVisualStyleBackColor = false;
+            btn_editarquipe.Click += btn_editarquipe_Click;
             // 
             // dataGridView1
             // 
@@ -158,10 +163,10 @@
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 154);
+            dataGridView1.Location = new Point(12, 183);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(984, 442);
+            dataGridView1.Size = new Size(984, 413);
             dataGridView1.TabIndex = 31;
             // 
             // btn_equipes_voltar
@@ -182,7 +187,7 @@
             btn_consulta_equipe.BackColor = Color.Green;
             btn_consulta_equipe.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_consulta_equipe.ForeColor = Color.White;
-            btn_consulta_equipe.Location = new Point(831, 96);
+            btn_consulta_equipe.Location = new Point(421, 143);
             btn_consulta_equipe.Name = "btn_consulta_equipe";
             btn_consulta_equipe.Size = new Size(144, 23);
             btn_consulta_equipe.TabIndex = 81;
@@ -190,11 +195,43 @@
             btn_consulta_equipe.UseVisualStyleBackColor = false;
             btn_consulta_equipe.Click += btn_consulta_equipe_Click;
             // 
+            // btn_pesquisar
+            // 
+            btn_pesquisar.Location = new Point(871, 95);
+            btn_pesquisar.Name = "btn_pesquisar";
+            btn_pesquisar.Size = new Size(88, 24);
+            btn_pesquisar.TabIndex = 85;
+            btn_pesquisar.Text = "Pesquisar";
+            btn_pesquisar.UseVisualStyleBackColor = true;
+            // 
+            // lbl_equipes_area
+            // 
+            lbl_equipes_area.AutoSize = true;
+            lbl_equipes_area.BackColor = Color.White;
+            lbl_equipes_area.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_equipes_area.ForeColor = SystemColors.ControlDarkDark;
+            lbl_equipes_area.Location = new Point(421, 77);
+            lbl_equipes_area.Name = "lbl_equipes_area";
+            lbl_equipes_area.Size = new Size(50, 17);
+            lbl_equipes_area.TabIndex = 86;
+            lbl_equipes_area.Text = "Equipe";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(421, 97);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(161, 23);
+            comboBox1.TabIndex = 87;
+            // 
             // TelaEquipes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 681);
+            Controls.Add(comboBox1);
+            Controls.Add(lbl_equipes_area);
+            Controls.Add(btn_pesquisar);
             Controls.Add(btn_consulta_equipe);
             Controls.Add(btn_equipes_voltar);
             Controls.Add(dataGridView1);
@@ -211,7 +248,7 @@
             Name = "TelaEquipes";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Nexus Urban Farm";
-            FormClosing += TelaEquipes_FormClosing;
+            //FormClosing += TelaEquipes_FormClosing;
             Load += TelaEquipes_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -236,5 +273,8 @@
         private DataGridView dataGridView1;
         private Button btn_equipes_voltar;
         private Button btn_consulta_equipe;
+        private Button btn_pesquisar;
+        private Label lbl_equipes_area;
+        private ComboBox comboBox1;
     }
 }

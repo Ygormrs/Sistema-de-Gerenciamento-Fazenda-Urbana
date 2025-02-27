@@ -27,6 +27,7 @@ namespace SistemaGerenciamentoFazendaUrbana
         private void btn_solicitarcompra_Click(object sender, EventArgs e)
         {
             TelaNovaCompra FormMain = new TelaNovaCompra();
+            FormMain.btn_att_novacompra.Visible = false;
             FormMain.Show();
         }
 
@@ -45,10 +46,10 @@ namespace SistemaGerenciamentoFazendaUrbana
 
         private void btn_consultarcompra_Click(object sender, EventArgs e)
         {
-
             TelaNovaCompra FormMain = new TelaNovaCompra();
             FormMain.lbl_novacompra.Text = "Consulta Compra";
             FormMain.btn_novacompra_salvar.Visible = false;
+            FormMain.btn_att_novacompra.Visible = false;
             FormMain.txtbox_codigo_compra.Text = dataGridView1.CurrentRow.Cells["IDCompra"].Value.ToString();
             FormMain.txtbox_codigo_compra.Enabled = false;
             FormMain.msktxtbox_nc_cnpj_forn.Text = dataGridView1.CurrentRow.Cells["CNPJ"].Value.ToString();
@@ -70,6 +71,19 @@ namespace SistemaGerenciamentoFazendaUrbana
             {
                 e.Cancel = true;
             }
+        }
+
+        private void btn_editar_compra_Click(object sender, EventArgs e)
+        {
+            TelaNovaCompra FormMain = new TelaNovaCompra();
+            FormMain.lbl_novacompra.Text = "Consulta Compra";
+            FormMain.btn_novacompra_salvar.Visible = false;
+            FormMain.txtbox_codigo_compra.Text = dataGridView1.CurrentRow.Cells["IDCompra"].Value.ToString();
+            FormMain.msktxtbox_nc_cnpj_forn.Text = dataGridView1.CurrentRow.Cells["CNPJ"].Value.ToString();
+            FormMain.txtbox_nc_solicitante.Text = dataGridView1.CurrentRow.Cells["Solicitante"].Value.ToString();
+            FormMain.txtbox_nc_produto.Text = dataGridView1.CurrentRow.Cells["Produto"].Value.ToString();
+            FormMain.txtbox_nc_quantidade.Text = dataGridView1.CurrentRow.Cells["Quantidade"].Value.ToString();
+            FormMain.ShowDialog();
         }
     }
 }

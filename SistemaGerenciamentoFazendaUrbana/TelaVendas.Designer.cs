@@ -40,6 +40,8 @@
             dataGridView1 = new DataGridView();
             btn_vendas_voltar = new Button();
             btn_consultar_venda = new Button();
+            btn_att_venda = new Button();
+            btn_pesquisar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -83,7 +85,7 @@
             pictureBox1.BackColor = Color.White;
             pictureBox1.Location = new Point(12, 62);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(984, 77);
+            pictureBox1.Size = new Size(984, 120);
             pictureBox1.TabIndex = 18;
             pictureBox1.TabStop = false;
             // 
@@ -131,7 +133,7 @@
             btn_add_venda.BackColor = Color.Green;
             btn_add_venda.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_add_venda.ForeColor = Color.White;
-            btn_add_venda.Location = new Point(655, 97);
+            btn_add_venda.Location = new Point(36, 146);
             btn_add_venda.Name = "btn_add_venda";
             btn_add_venda.Size = new Size(144, 23);
             btn_add_venda.TabIndex = 2;
@@ -143,9 +145,9 @@
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 145);
+            dataGridView1.Location = new Point(12, 188);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(984, 457);
+            dataGridView1.Size = new Size(984, 414);
             dataGridView1.TabIndex = 33;
             // 
             // btn_vendas_voltar
@@ -166,7 +168,7 @@
             btn_consultar_venda.BackColor = Color.Green;
             btn_consultar_venda.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_consultar_venda.ForeColor = Color.White;
-            btn_consultar_venda.Location = new Point(830, 96);
+            btn_consultar_venda.Location = new Point(419, 146);
             btn_consultar_venda.Name = "btn_consultar_venda";
             btn_consultar_venda.Size = new Size(144, 23);
             btn_consultar_venda.TabIndex = 34;
@@ -174,11 +176,35 @@
             btn_consultar_venda.UseVisualStyleBackColor = false;
             btn_consultar_venda.Click += btn_consultar_venda_Click;
             // 
+            // btn_att_venda
+            // 
+            btn_att_venda.BackColor = Color.Green;
+            btn_att_venda.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_att_venda.ForeColor = Color.White;
+            btn_att_venda.Location = new Point(231, 146);
+            btn_att_venda.Name = "btn_att_venda";
+            btn_att_venda.Size = new Size(144, 23);
+            btn_att_venda.TabIndex = 35;
+            btn_att_venda.Text = "Editar Venda";
+            btn_att_venda.UseVisualStyleBackColor = false;
+            btn_att_venda.Click += btn_att_venda_Click;
+            // 
+            // btn_pesquisar
+            // 
+            btn_pesquisar.Location = new Point(859, 97);
+            btn_pesquisar.Name = "btn_pesquisar";
+            btn_pesquisar.Size = new Size(88, 24);
+            btn_pesquisar.TabIndex = 86;
+            btn_pesquisar.Text = "Pesquisar";
+            btn_pesquisar.UseVisualStyleBackColor = true;
+            // 
             // TelaVendas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1008, 681);
+            Controls.Add(btn_pesquisar);
+            Controls.Add(btn_att_venda);
             Controls.Add(btn_consultar_venda);
             Controls.Add(btn_vendas_voltar);
             Controls.Add(dataGridView1);
@@ -218,5 +244,7 @@
         private DataGridView dataGridView1;
         private Button btn_vendas_voltar;
         private Button btn_consultar_venda;
+        private Button btn_att_venda;
+        private Button btn_pesquisar;
     }
 }

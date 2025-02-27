@@ -129,7 +129,7 @@
             lbl_nome_funcionario.BackColor = Color.White;
             lbl_nome_funcionario.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_nome_funcionario.ForeColor = SystemColors.ControlDarkDark;
-            lbl_nome_funcionario.Location = new Point(257, 81);
+            lbl_nome_funcionario.Location = new Point(240, 80);
             lbl_nome_funcionario.Name = "lbl_nome_funcionario";
             lbl_nome_funcionario.Size = new Size(142, 17);
             lbl_nome_funcionario.TabIndex = 33;
@@ -137,7 +137,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(257, 100);
+            textBox1.Location = new Point(240, 100);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(159, 23);
             textBox1.TabIndex = 34;
@@ -148,7 +148,7 @@
             lbl_status_funcionario.BackColor = Color.White;
             lbl_status_funcionario.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_status_funcionario.ForeColor = SystemColors.ControlDarkDark;
-            lbl_status_funcionario.Location = new Point(471, 81);
+            lbl_status_funcionario.Location = new Point(447, 81);
             lbl_status_funcionario.Name = "lbl_status_funcionario";
             lbl_status_funcionario.Size = new Size(46, 17);
             lbl_status_funcionario.TabIndex = 35;
@@ -157,7 +157,7 @@
             // combobox_status_cliente
             // 
             combobox_status_cliente.FormattingEnabled = true;
-            combobox_status_cliente.Location = new Point(471, 100);
+            combobox_status_cliente.Location = new Point(447, 100);
             combobox_status_cliente.Name = "combobox_status_cliente";
             combobox_status_cliente.Size = new Size(187, 23);
             combobox_status_cliente.TabIndex = 36;
@@ -167,7 +167,7 @@
             btn_editar_funcionario.BackColor = Color.Green;
             btn_editar_funcionario.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_editar_funcionario.ForeColor = Color.White;
-            btn_editar_funcionario.Location = new Point(431, 144);
+            btn_editar_funcionario.Location = new Point(240, 144);
             btn_editar_funcionario.Name = "btn_editar_funcionario";
             btn_editar_funcionario.Size = new Size(144, 23);
             btn_editar_funcionario.TabIndex = 37;
@@ -180,7 +180,7 @@
             btn_consultar_funcionario.BackColor = Color.Green;
             btn_consultar_funcionario.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_consultar_funcionario.ForeColor = Color.White;
-            btn_consultar_funcionario.Location = new Point(822, 144);
+            btn_consultar_funcionario.Location = new Point(447, 144);
             btn_consultar_funcionario.Name = "btn_consultar_funcionario";
             btn_consultar_funcionario.Size = new Size(144, 23);
             btn_consultar_funcionario.TabIndex = 38;

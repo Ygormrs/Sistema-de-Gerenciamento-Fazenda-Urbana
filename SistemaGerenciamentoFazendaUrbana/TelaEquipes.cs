@@ -21,6 +21,7 @@ namespace SistemaGerenciamentoFazendaUrbana
         private void btn_add_equipe_Click(object sender, EventArgs e)
         {
             TelaNovaEquipe FormMain = new TelaNovaEquipe();
+            FormMain.btn_att_ne.Visible = false;
             FormMain.ShowDialog();
         }
 
@@ -49,6 +50,7 @@ namespace SistemaGerenciamentoFazendaUrbana
             TelaNovaEquipe FormMain = new TelaNovaEquipe();
             FormMain.lbl_novaequipe.Text = "Consulta Equipe";
             FormMain.btn_ne_salvar.Visible = false;
+            FormMain.btn_att_ne.Visible = false;
             FormMain.txtbox_codigo_equipe.Text = dataGridView1.CurrentRow.Cells["IDEquipe"].Value.ToString();
             FormMain.txtbox_ne_nomeequipe.Enabled = false;
             FormMain.txtbox_ne_nomeequipe.Text = dataGridView1.CurrentRow.Cells["Nome"].Value.ToString();
@@ -57,14 +59,25 @@ namespace SistemaGerenciamentoFazendaUrbana
             FormMain.ShowDialog();
         }
 
-        private void TelaEquipes_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult dlg = MessageBox.Show("Você realmente deseja voltar?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        //private void TelaEquipes_FormClosing(object sender, FormClosingEventArgs e)
+        //{
+        //    DialogResult dlg = MessageBox.Show("Você realmente deseja voltar?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (dlg == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
+        //    if (dlg == DialogResult.No)
+        //    {
+        //        e.Cancel = true;
+        //    }
+        //}
+
+        private void btn_editarquipe_Click(object sender, EventArgs e)
+        {
+            TelaNovaEquipe FormMain = new TelaNovaEquipe();
+            FormMain.lbl_novaequipe.Text = "Editar Equipe";
+            FormMain.btn_ne_salvar.Visible = false;
+            FormMain.txtbox_codigo_equipe.Text = dataGridView1.CurrentRow.Cells["IDEquipe"].Value.ToString();
+            FormMain.txtbox_ne_nomeequipe.Text = dataGridView1.CurrentRow.Cells["Nome"].Value.ToString();
+            FormMain.txtbox_ne_emaildolider.Text = dataGridView1.CurrentRow.Cells["Email"].Value.ToString();
+            FormMain.ShowDialog();
         }
     }
 }
