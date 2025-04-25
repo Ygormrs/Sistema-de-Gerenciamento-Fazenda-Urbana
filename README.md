@@ -19,6 +19,7 @@ Antes de rodar a aplicação, certifique-se de que você tenha os seguintes requ
 - [.NET SDK](https://dotnet.microsoft.com/en-us/download) (versão recomendada: **.NET 6.0** ou superior)
 - [Git](https://git-scm.com/) (opcional, mas recomendado)
 - Editor de código como [Visual Studio](https://visualstudio.microsoft.com/) ou [Visual Studio Code](https://code.visualstudio.com/)
+- Banco de Dados [SQL Server](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
 
 ## Como rodar a aplicação
 
