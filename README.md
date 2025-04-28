@@ -41,5 +41,5 @@ Execute o script a seguir para criar o banco e as tabelas:
 
 ### 3. Entrar no Sistema
 ```Login e Senha
-Login: admin / Senha: Admim
+Login: admin / Senha: admin
 ```
